@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F9F9"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItemNoteImg"
+        android:src="@drawable/p"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Note Title"
+        android:id="@+id/lisItemNoteTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/listItemNoteImg"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginBottom="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note Title，Tooooooooooooooooooooooooooooooooooo"
+        android:id="@+id/lisItemNoteBody"
+        android:layout_below="@+id/lisItemNoteTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/listItemNoteImg"
+        android:ellipsize="end"
+        android:singleLine="true"  />
+</RelativeLayout>
